@@ -48,7 +48,20 @@ class MainMenuScreen extends StatelessWidget {
                 textColor: palette.redPen,
                 fontSize: 42,
                 soundEffect: SfxType.erase,
-                child: const Text('Play'),
+                child: const Text('TTT'),
+              ),
+            ),
+            DelayedAppear(
+              ms: 800,
+              child: RoughButton(
+                onTap: () {
+                  GoRouter.of(context).go('/play');
+                },
+                drawRectangle: true,
+                textColor: palette.redPen,
+                fontSize: 42,
+                soundEffect: SfxType.erase,
+                child: const Text('Prio'),
               ),
             ),
             if (gamesServicesController != null) ...[

@@ -106,6 +106,10 @@ class GamesServicesController {
 
     _log.info('Submitting $score to leaderboard.');
 
+    //Create Variable that is 23 + 1
+    int scoreValue = score.score + 1;
+    print(scoreValue);
+
     try {
       await gs.GamesServices.submitScore(
         score: gs.Score(

@@ -39,6 +39,10 @@ class InAppPurchaseController extends ChangeNotifier {
       return;
     }
 
+
+
+
+
     _adRemoval = const AdRemovalPurchase.pending();
     notifyListeners();
 
